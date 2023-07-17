@@ -1,14 +1,12 @@
 import React from 'react'
-import Portofolio from "./screen/Portofolio/Portofolio";
+import Home from "./screen/Portofolio/Home";
 import Navbar from "./screen/Navbar/Navbar";
 import './Test.css'
-import Competence from './screen/Competences/Competence';
 const Test = () => {
     return(
         <div id="test">
   <Navbar/>
-   <Portofolio/>
-   <Competence/>
+   <Home/>
     </div> 
     )
 }

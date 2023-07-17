@@ -11,7 +11,7 @@ const Navbar = () => {
         <Menu id="close" style={{ fill: "black", marginTop:"-50px", marginBottom:"25px" }} />
             <li><Link to="/home" className="list active">Home</Link></li>
             <li><Link to="/blog" className="list">Blog</Link></li>
-            <li><button><Link to="/about" className="list">Sign in</Link></button></li>
+            <li><button><Link to="/portofolio" className="list">Sign in</Link></button></li>
             <li><button><Link to="/about" className="list">Sign up</Link></button></li>
         </ul>
     </div>

@@ -1,6 +1,7 @@
 import Test from './Test';
 import {BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom'
-import About from './About/About';
+import Portofolio from './Portofolio/Portofolio';
+import Competence from './screen/Competences/Competence';
 function App() {
   return (
     <div className="App">
@@ -8,7 +9,7 @@ function App() {
 
 <Routes>
      <Route exact path="/" element={<Test/>}/>
-     <Route exact path="/about" element={<About/>}/>
+     <Route exact path="/portofolio" element={<Portofolio/>}/>
 </Routes>
 
 

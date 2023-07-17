@@ -2,7 +2,7 @@ import React from 'react'
 import './Portofolio.css'
 import { FacebookOutlined, Google, Twitter, LinkedIn } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
-const Portofolio = () =>{
+const Home = () =>{
     return(
         <div className="genie">
             <div className="portofolio">
@@ -233,4 +233,4 @@ const Portofolio = () =>{
         </div>
     )
 }
-export default Portofolio;
+export default Home;
