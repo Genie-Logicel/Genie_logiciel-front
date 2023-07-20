@@ -1,253 +1,46 @@
 import React from 'react'
 import './Portofolio.css'
-import { FacebookOutlined, Google, Twitter, LinkedIn } from '@mui/icons-material'
+import { FacebookOutlined, LinkedIn } from '@mui/icons-material'
+import { GitHub } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
+import Fake from '../../FakeData/FakeData'
+import { Link } from 'react-router-dom'
+import { HomeOutlined } from '@mui/icons-material'
 const Home = () =>{
     const backgroundStyle = {
-        backgroundImage: `url(${process.env.PUBLIC_URL}/users-face/8.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/users-face/1.png)`,
       };
-      const bannerStyle = {
-        backgroundImage: `url(${process.env.PUBLIC_URL}/gallery/crypto/bitcoin.jpg)`,
-      
-      };
-      const newsLetterStyle = {
-        backgroundImage: `url(${process.env.PUBLIC_URL}/gallery/bg-big-1.jpg)`,
-      
-      };
+      let tester = ""
+    tester= Fake.map((item)=>{
+        return(
+            <div className="portofolio" key={item.id}>
+            <img src={`../../users-face/1.png`} alt=""/>
+            <p className="nom">{item.name}</p>
+            <p className="specialite">{item.specialite}</p>
+            <div className="Icon">
+            <Link to={item.facebook} className="btn1"><FacebookOutlined style={{ fill: "black"}}/></Link>
+            <Link to={item.gitHub} className="btn1"><GitHub style={{ fill: "black"}}/></Link>
+            <Link to={item.linkedIn} className="btn1"><LinkedIn style={{ fill: "black"}}/></Link>
+            <Link to="/portofolio" className="btn1"><HomeOutlined style={{ fill: "#0ef"}}/></Link>
+            </div>
+           
+           </div>
+        )
+    })
     return(
         <div className="genie">
-            <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-            <div id="hero" style={backgroundStyle}>
-    <h4>Trade-in-offer</h4>
-    <h2>Super values deals</h2>
-    <h1>On all products</h1>
-    <p>Save more with coupons & up to 70% off!</p>
-    <button>Shop now</button>
+            <div className="font" style={backgroundStyle}>
+
+    <h1>Qui sommes-nous</h1>
+    <p>La communauté compte actuellement près de 90 membres actifs et motivés. Vous pouvez aussi nous rejoindre.</p>
    </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio" style={{backgroundColor:"white", width:"50px"}}>
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
-           <div className="portofolio">
-            <img src={`../../users-face/1.png`} alt=""/>
-            <p className="specialite">Developpeur web</p>
-            <div className="Icon">
-            <IconButton className="btn1"> <FacebookOutlined style={{ fill: "black"}}/></IconButton>
-            <IconButton className="btn1"><Google style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-        </IconButton>
-            <IconButton className="btn2"><Twitter style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-            <IconButton className="btn3"><LinkedIn style={{ fill: "#333", fontSize:"1rem", width:"25px", height:"25px", marginRight:"5px"}}/>
-            </IconButton>
-           
-            </div>
-           
-           </div>
+   <span className="membre">Tous les membres</span>
+   <div className="home">
+   
+{tester}
+            
+</div>
+            
         </div>
     )
 }

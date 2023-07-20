@@ -3,7 +3,9 @@ import { Icon } from '@mui/material'
 import { Code } from '@mui/icons-material'
 import { Security } from '@mui/icons-material'
 import "./Competence.css"
+import Fake from '../../FakeData/FakeData'
 const Competence = ()=>{
+    
     return(
         <section className="services" id="services">
            <h2 className="heading">Competences</h2>
