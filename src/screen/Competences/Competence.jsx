@@ -2,7 +2,7 @@ import React from 'react'
 import { Icon } from '@mui/material'
 import { Code } from '@mui/icons-material'
 import { Security } from '@mui/icons-material'
-import "./Competence.css"
+// import "./Competence.css"
 import Fake from '../../FakeData/FakeData'
 const Competence = ()=>{
     

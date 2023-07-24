@@ -2,7 +2,7 @@ import React from 'react'
 import { FacebookOutlined, Google, Twitter, LinkedIn } from '@mui/icons-material'
 import { IconButton } from '@mui/material'
 import { Link } from 'react-router-dom'
-import './About.css'
+// import './About.css'
 const About = () => {
     return(
         <section className="home" id="home">
