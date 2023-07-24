@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Members = () => {
   return (
     <div className="w-full max-w-xs border border-gray-200 rounded-lg shadow hover:shadow-2xl hover:scale-105 hover:duration-150">
@@ -53,12 +54,11 @@ const Members = () => {
             </a>
           </span>
           <div className="flex space-x-3">
-            <a
-              href="#"
+            <Link to='/portofolio'
               className="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700"
             >
               Voir Profil
-            </a>
+            </Link>
           </div>
         </div>
       </div>
