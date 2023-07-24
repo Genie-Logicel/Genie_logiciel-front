@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 import Home from "./screen/Portofolio/Home";
 import Navbar from "./screen/Navbar/Navbar";
-import './Test.css'
+import "./Test.css";
 const Test = () => {
-    return(
-        <div id="test">
-  <Navbar/>
-   <Home/>
-    </div> 
-    )
-}
+  return (
+    <div id="test">
+      {/* <Navbar /> */}
+      <Home />
+    </div>
+  );
+};
 export default Test;
