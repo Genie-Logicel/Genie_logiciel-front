@@ -8,7 +8,7 @@ const Competence = ()=>{
     
     return(
         <section className="services" id="services">
-           <h2 className="heading">Competences</h2>
+           <h2 className="heading" style={{ color: "black"}}>Competences</h2>
            <div className="services-container">
            <div className="services-box">
            <Code style={{ fill: "#0ef", fontSize:"2rem", width:"100px", height:"100px", marginRight:"5px"}}/>

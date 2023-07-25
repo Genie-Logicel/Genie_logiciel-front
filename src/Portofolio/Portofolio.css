@@ -1,9 +1,4 @@
-.portofolio{
+.folio{
     display: flex;
-    flex-direction: column;
-    margin: 15px;
-    width: 100%;
-    height: 100%;
-    background: #1f242d;
-    border: none;
+    flex-direction: row;
 }
