@@ -18,10 +18,7 @@ const Home = () =>{
             <p className="nom">{item.name}</p>
             <p className="specialite">{item.specialite}</p>
             <div className="Icon">
-            <Link to={item.facebook} className="btn1"><FacebookOutlined style={{ fill: "black"}}/></Link>
-            <Link to={item.gitHub} className="btn1"><GitHub style={{ fill: "black"}}/></Link>
-            <Link to={item.linkedIn} className="btn1"><LinkedIn style={{ fill: "black"}}/></Link>
-            <Link to="/portofolio" className="btn1"><HomeOutlined style={{ fill: "#0ef"}}/></Link>
+            <Link to="/portofolio"><button className="btn1">Voir Profil</button></Link>
             </div>
            
            </div>

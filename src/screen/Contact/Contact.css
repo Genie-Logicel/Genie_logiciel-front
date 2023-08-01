@@ -126,7 +126,7 @@ span{
     font-family: inherit;
     padding: .8rem 1.1rem;
     outline: none;
-    border: none;
+    border: none; 
     background-color: var(--color-grey-5);
     width: 100%;
     color: var(--color-white);

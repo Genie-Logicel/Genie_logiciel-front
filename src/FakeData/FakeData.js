@@ -6,7 +6,7 @@ export const Fake=[
         facebook:"https://www.facebook.com/",
         linkedIn:"https://www.linkedin.com",
         gitHub:"https://github.com",
-        specialite: "Devellopeur Web"
+        specialite: "Devellopeur Web" 
        
     },
     {

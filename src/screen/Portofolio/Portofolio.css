@@ -27,7 +27,30 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-left: 1.5rem;
+    margin-left: 4.2rem;
+}
+.portofolio:hover{
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
+    transition: all .4s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.portofolio:hover img{
+  transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.btn1{
+  border: none;
+  border-radius: 30px;
+  background-color: #0ef;
+  text-decoration: none;
+  color: black;
+  width: 100px;
+  height: 30px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 30px;
 }
 
 .membre{
@@ -35,7 +58,7 @@
   width: 150px;
   height: 50px;
   background-color: #0ef;
-  border-radius: 38%;
+  border-radius: 30px;
   border: none;
   font-size: 1.5rem;
   font-weight: 700;
@@ -43,6 +66,20 @@
   margin: 25px;
   padding-top: 15px;
   margin-left: 55rem;
+}
+.nom{
+  color:black;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 5px;
+}
+.specialite{
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .font {
@@ -98,3 +135,8 @@
     background-color: #000;
     color: #fff;
   }
+
+  .Icon{
+    margin-left: 15px;
+  }
+  
